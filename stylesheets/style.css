@@ -2,19 +2,41 @@ body{
 	width: 1024px;
 	height: 768px;
 }
+body {
+	background: url(../assets/images/background/background_graphics.jpg);
+	background-size: contain;
+				
+}
+
+
+
+
+
 @font-face {
 	font-family: FrutigerNeueWBold; 
 	src: url(FrutigerNeueW01-Bd.otf); 
 }
 h1{
 	font-family: FrutigerNeueWBold;
+	font-size: 28.045px;
+	text-align: center;
+	color: #432171;
 }
 .container{
 	margin: 0 auto;
 }
+
 .tab {
-	width: 30%;
+	font-family: FrutigerNeueWBold;
+	font-size: 15px;
+	width: 33%;
 	height: 50px;
+	border: 1px solid red;
+	margin: 0px;
+	
+	text-align: center;
+	color: #5e5968;
+	float: left;
 }
 .page {
 	display: none;
@@ -27,6 +49,19 @@ h1{
 
 .graphics{
 	width: 597px;
+	height: 361px;
+	position: relative;
+	margin-left: 214px;
+	border: 2px solid #4a2278;
+	border-top-right-radius: 36px;
+	border-bottom-left-radius: 36px;
+}
+.graphics:before {
+	position: absolute;
+	top: 0;
+  	left: -214px;
+	content: "%PATIENTSb";
+	width: 214px;
 	height: 361px;
 	border: 2px solid #4a2278;
 	border-top-right-radius: 36px;
