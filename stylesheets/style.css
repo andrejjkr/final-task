@@ -1,14 +1,28 @@
-body{
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+        background: url(../assets/images/background/background_graphics.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+
+
+/*body{
 	width: 1024px;
 	height: 768px;
 }
 body {
-	background: url(../assets/images/background/background_graphics.jpg);
-	background-size: contain;
+	;
+	
 				
 }
 
-
+*/
 
 
 
@@ -25,18 +39,20 @@ h1{
 .container{
 	margin: 0 auto;
 }
-
+/*----------Меню----------*/
 .tab {
 	font-family: FrutigerNeueWBold;
 	font-size: 15px;
-	width: 33%;
+	width: 33.2%;
 	height: 50px;
-	border: 1px solid red;
 	margin: 0px;
-	
 	text-align: center;
 	color: #5e5968;
 	float: left;
+}
+.tab:nth-of-type(2){
+	border-left: 1px solid #cacaca;
+	border-right: 1px solid #cacaca;
 }
 .page {
 	display: none;
@@ -46,24 +62,67 @@ h1{
 	width: 100%;
 	height: 718px;
 }
-
+/*----------Graphics----------*/
 .graphics{
-	width: 597px;
+	width: 100%;
 	height: 361px;
 	position: relative;
-	margin-left: 214px;
-	border: 2px solid #4a2278;
-	border-top-right-radius: 36px;
-	border-bottom-left-radius: 36px;
 }
-.graphics:before {
-	position: absolute;
-	top: 0;
-  	left: -214px;
-	content: "%PATIENTSb";
+.sidebar{
+	float: left;
+	text-align: right;
 	width: 214px;
+}
+.sidebar p{
+	margin-top: 64px;
+	margin-right: 9px;
+}
+.diagram{
+	width: 597px;
 	height: 361px;
+	box-sizing: border-box;
 	border: 2px solid #4a2278;
 	border-top-right-radius: 36px;
 	border-bottom-left-radius: 36px;
+	background-color: white;
+	float: left;
+}
+.diagram div{
+	float: left;
+}
+.y_axis{
+	width: 50px;
+	height: 357px;
+	border-bottom-left-radius: 34px;
+	background-color: #dad9da;
+}
+.diagram_header{
+	width: 543px;
+	text-align: center;
+}
+.left_column{
+	width: 133px;
+	height: 242px;
+	margin-left: 138px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	background-color: #1785a3; 
+	text-align: center;
+	color: white;
+}
+.right_column{
+	width: 133px;
+	height: 172px;
+	margin-top: 70px;
+	margin-right: 138px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #e3007c;
+	text-align: center;
+	color: white;
+}
+.x_axis{
+	width: 543px;
+	border-top: 4px solid #4a2278;
+	text-align: center;
 }
