@@ -55,7 +55,7 @@
 						<div class="right_column">
 							<p>5.1</p>
 							<p>n=16/316</p>
-							<p>XALERTO</p>
+							<p>XarelTO</p>
 						</div>
 						<div class="x_axis">
 							<p>Cancer</p>
@@ -64,7 +64,7 @@
 					</div>
 				</div>
 				<div class="graphics_footer">
-					<p><sup>a</sup>Xalerto is contraindicated in lesions or conditions, if they are considered to be a significant for major<br> bleeding, which may include the presence of malignant neoplasms at hirisk of bleeding.</p>
+					<p><sup>a</sup>Xarelto is contraindicated in lesions or conditions, if they are considered to be a significant for major<br> bleeding, which may include the presence of malignant neoplasms at hirisk of bleeding.</p>
 					<p><sup>b</sup>Outcome:symptomatic, recurrent VTE.</p>
 				</div>
 			</article>
@@ -73,11 +73,108 @@
 					<h1>Xarelto<sup>&reg;</sup> Estimator of Resources Saved</h1>
 				</div>
 				<div class="calculator_content">
-					<div class="left_calculator"></div>
-					<div class="right_calculator"></div>
+					<form class="left_calculator" action="">
+						<div class="head_calculator">
+							<input type="text">
+							<button class="calculate">CALCULATE</button>
+							<a href="#">?</a>
+						</div>
+						<div class="about_calculator">
+							<p>Assumptions to estimate calculations: proportion of patients with DVT contraindicated<br>for Xarelto or LMWH/VKA<sup>1,2</sup> = 7.5%</p>
+							<p><strong>Number of patients with DVT - 7.5% =</strong> <span>[A]</span> Total number of DVT patients<br> eligible for dual LMWH/VKA or Xarelto</p>
+						</div>
+						<div class="head_fields_calculator" id="Injections_left_calculator">
+							<h2>Injections avoided<sup>3-7</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>Injections avoided = numbers of LMWH injections received by cancer patients<br> with DVT + LMWH injections received by DVT patients without canser</p>
+						</div>
+						<div class="head_fields_calculator" id="inr_left_calculator">
+							<h2>INR clinic visits avoided<sup>3, 7, 8</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>INR clinic visits avoided = numbers of DVT patients eligible for<br>VKA treatment &times; number of INR monitoring visits per patients</p>
+						</div>
+						<div class="head_fields_calculator" id="nurse_left_calculator">
+							<h2>Nurse visits avoided<sup>9</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>Nurse assistance visits avoided = numbers of non-canser DVT patients eligible<br> for initial LMWH treatment &times; proportion of these patients treated by nurses<br> in their own homes &times; mean number of LMWH injections administered</p>
+						</div>
+						<div class="head_fields_calculator" id="hospital_left_calculator">
+							<h2>Hopital bed days saved<sup>10</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>Hopital bed days saved = numbers of eligible DVT &times; proportion of DVT<br> patients hospitaled &times; number of hospital bed days saved per DVT patient<br> treated with Xalerto</p>
+						</div>
+					</form>
+					<form action="" class="right_calculator">
+						<div class="head_calculator">
+							<input type="text">
+							<button class="calculate">CALCULATE</button>
+							<a href="#">?</a>
+						</div>
+						<div class="about_calculator">
+							<p>Assumptions to estimate calculations: proportion of patients with PE contraindicated<br>for Xarelto or LMWH/VKA<sup>1,2</sup> = 15%</p>
+							<p><strong>Number of patients with PE - 15% =</strong> <span>[A]</span> Total number of PET patients eligible<br> for dual LMWH/VKA or Xarelto</p>
+						</div>
+						<div class="head_fields_calculator" id="Injections_right_calculator">
+							<h2>Injections avoided<sup>3-6, 11</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>Injections avoided = numbers of LMWH injections received by cancer patients<br> with PE + LMWH injections received by PE patients without canser</p>
+						</div>
+						<div class="head_fields_calculator" id="inr_right_calculator">
+							<h2>INR clinic visits avoided<sup>3, 8, 11</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>INR clinic visits avoided = numbers of PE patients eligible for VKA<br>treatment &times; number of INR monitoring visits per patients</p>
+						</div>
+						<div class="head_fields_calculator" id="hospital_right_calculator">
+							<h2>Hopital bed days saved<sup>10</sup></h2>
+							<output></output>
+						</div>
+						<div class="about_fields_calculator">
+							<a href="#">+</a>	
+							<p>Hopital bed days saved = numbers of eligible PE &times; proportion of PE<br> patients hospitaled &times; number of hospital bed days saved per PE patient<br> treated with Xalerto</p>
+						</div>
+					</form>
+					<form action="" class="combined_calculator">
+						<div class="combined_calculator">
+							<h2>Combined DVT + PE Resources Saved</h2>
+						</div>
+						<div class="injections">
+							<h3>Injections avoided<sup>3-7, 11</sup></h3>
+							<output></output>
+						</div>
+						<div class="inr_clinic">
+							<h3>INR clinic visits avoide<sup>3, 7, 8, 11</sup> </h3>
+							<output></output>
+						</div>
+						<div class="nurse">
+							<h3>Nurse visits avoided<sup>9</sup></h3>
+							<output></output>
+						</div>
+						<div class="hospital">
+							<h3>Hopital bed days saved<sup>10</sup></h3>
+							<output></output>
+						</div>
+					</form>
 				</div>
 				<div class="calculator_footer">
-					<p>Numbers provided are based on general epidemiological research and on clinical trial experience from the Phase III programme with Xalerto. Healthcare practice<br>may be different in your country(both before and after introduction Xalerto), and thus the estimation may not reflect your country's perspective.</p>
+					<p>Numbers provided are based on general epidemiological research and on clinical trial experience from the Phase III programme with Xarelto. Healthcare practice<br>may be different in your country(both before and after introduction Xarelto), and thus the estimation may not reflect your country's perspective.</p>
 					<p>Actual costs are not included.</p>
 				</div>
 			</article>
