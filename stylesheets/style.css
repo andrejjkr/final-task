@@ -16,6 +16,10 @@ html {
 	font-family: FrutigerLT-Roman; 
 	src: url(FrutigerLT-Roman.woff); 
 }
+@font-face {
+	font-family: Frutiger-LightCn; 
+	src: url(Frutiger-LightCn.woff); 
+}
 h1{
 	font-family: FrutigerLT-Black;
 	font-size: 28.045px;
@@ -31,7 +35,7 @@ h1{
 	font-size: 15px;
 	width: 33.2%;
 	height: 50px;
-	margin: 0px;
+	margin-bottom: 37px;
 	text-align: center;
 	color: #5e5968;
 	float: left;
@@ -52,6 +56,7 @@ h1{
 .graphics_content{
 	width: 100%;
 	height: 361px;
+	margin-top: 95px;
 	position: relative;
 }
 .sidebar{
@@ -62,6 +67,9 @@ h1{
 .sidebar p{
 	margin-top: 64px;
 	margin-right: 9px;
+	font-family: FrutigerLT-Roman;
+	font-size: 15px;
+	font-weight: 900;
 }
 .diagram{
 	width: 597px;
@@ -159,5 +167,10 @@ h1{
 .x_axis p{
 	margin-top:15px;
 	font-family: FrutigerLT-Roman;
+	font-weight: 900;
+}
+.graphics_footer{
+	font-family: Frutiger-LightCn;
+	font-size: 12px;
 	font-weight: 900;
 }
