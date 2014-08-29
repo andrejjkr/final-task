@@ -4,27 +4,9 @@
 }
 html {
         background: url(../assets/images/background/background_graphics.jpg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+       
         background-size: cover;
 }
-
-
-
-/*body{
-	width: 1024px;
-	height: 768px;
-}
-body {
-	;
-	
-				
-}
-
-*/
-
-
 
 @font-face {
 	font-family: FrutigerLT-Black; 
@@ -110,7 +92,7 @@ h1{
 	font-family: FrutigerLT-Roman;
 	font-size: 15px;
 	font-weight: 900;
-	line-height: 2.25;
+	line-height: 2.35;
 	list-style-type: none;
 }
 .y_axis ul li:last-of-type{
@@ -123,35 +105,59 @@ h1{
 }
 .diagram_header{
 	width: 543px;
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+.diagram_header h2{
 	font-family: FrutigerLT-Roman;
 	font-size: 15px;
 	font-weight: 900;
-	margin: 1px;
+}
+.column{
+	width: 133px;
+	position: relative;
 	text-align: center;
 }
-.left_column{
-	width: 133px;
+.column p{
+	font-family: FrutigerLT-Roman;
+	font-size: 15px;
+	font-weight: 900;
+	font-size: 11px;
+	color: white;
+}
+.column p:first-of-type{
+	font-size: 15px;
+	margin: 10px 0 7px 0;
+}
+#left_column{
 	height: 242px;
 	margin-left: 138px;
 	border-top-right-radius: 7px;
 	border-top-left-radius: 7px;
 	background-color: #1785a3; 
-	text-align: center;
-	color: white;
 }
-.right_column{
-	width: 133px;
+#left_column p:last-of-type{
+	margin-top: 165px;
+}
+#right_column{
 	height: 172px;
 	margin-top: 70px;
 	margin-right: 138px;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	background-color: #e3007c;
-	text-align: center;
-	color: white;
+}
+#right_column p:last-of-type{
+	margin-top: 108px;
 }
 .x_axis{
 	width: 543px;
+	height: 48px;
 	border-top: 4px solid #4a2278;
 	text-align: center;
+}
+.x_axis p{
+	margin-top:15px;
+	font-family: FrutigerLT-Roman;
+	font-weight: 900;
 }
