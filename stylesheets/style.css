@@ -27,11 +27,15 @@ body {
 
 
 @font-face {
-	font-family: FrutigerNeueWBold; 
-	src: url(FrutigerNeueW01-Bd.otf); 
+	font-family: FrutigerLT-Black; 
+	src: url(FrutigerLT-Black.woff); 
+}
+@font-face {
+	font-family: FrutigerLT-Roman; 
+	src: url(FrutigerLT-Roman.woff); 
 }
 h1{
-	font-family: FrutigerNeueWBold;
+	font-family: FrutigerLT-Black;
 	font-size: 28.045px;
 	text-align: center;
 	color: #432171;
@@ -41,7 +45,7 @@ h1{
 }
 /*----------Меню----------*/
 .tab {
-	font-family: FrutigerNeueWBold;
+	font-family: FrutigerLT-Black;
 	font-size: 15px;
 	width: 33.2%;
 	height: 50px;
@@ -85,6 +89,7 @@ h1{
 	border-top-right-radius: 36px;
 	border-bottom-left-radius: 36px;
 	background-color: white;
+	position: relative;
 	float: left;
 }
 .diagram div{
@@ -95,20 +100,33 @@ h1{
 	height: 357px;
 	border-bottom-left-radius: 34px;
 	background-color: #dad9da;
-	position: relative;
 }
 .y_axis ul{
 	position: absolute;
 	top: 10px;
-	left: 10px;
-
+	left: 35px;
 }
 .y_axis ul li{
+	font-family: FrutigerLT-Roman;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 2.25;
 	list-style-type: none;
-
+}
+.y_axis ul li:last-of-type{
+	line-height: 0.3;
+	text-align: center;
+}
+.y_axis ul li span{
+	font-family: FrutigerLT-Black;
+	font-size: 8.5px;
 }
 .diagram_header{
 	width: 543px;
+	font-family: FrutigerLT-Roman;
+	font-size: 15px;
+	font-weight: 900;
+	margin: 1px;
 	text-align: center;
 }
 .left_column{
