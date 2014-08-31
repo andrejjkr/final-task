@@ -186,13 +186,10 @@ h1{
 	margin-left: 105px;
 	box-sizing: border-box;
 }
-
 .calculator_content a{
 	display: block;
 	text-decoration: none
 }
-
-
 .head_calculator{
 	width: 377px;
 	height: 53px;
@@ -207,8 +204,19 @@ h1{
 	margin-top: 10px;
 	margin-right: 6px;
 	box-sizing: border-box;
+	border: 1px solid #adadad;
+	background: linear-gradient(to bottom, rgba(213,212,213,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 100%);
 	float: left;
 }
+.head_calculator input::-webkit-input-placeholder {
+	text-indent: 8px;
+	font-family: FrutigerLT-Cn;
+	font-size: 10px;
+	font-weight: 700;
+	color: #acabab;
+}
+
+
 .head_calculator button{
 	width: 98px;
 	height: 32px;
@@ -219,7 +227,6 @@ h1{
 	font-size: 13px;
 	font-weight: 700;
 	background: linear-gradient(to bottom, rgba(221,208,227,1) 0%,rgba(224,170,204,1) 10%,rgba(226,106,164,1) 25%,rgba(227,89,155,1) 30%,rgba(226,45,138,1) 50%,rgba(227,32,135,1) 70%,rgba(227,30,134,1) 71%,rgba(227,30,134,1) 100%);
-	
 	float: left;
 }
 .head_calculator a{
@@ -248,24 +255,49 @@ h1{
 	font-family: FrutigerLT-Cn;
 	font-size: 10px;
 	font-weight: 100;
+	color: #7c7a7b;
 }
 .about_calculator span{
 	color: #e31e86;
 }
 
+
+
 .head_fields_calculator{
 	width: 377px;
-	height: 32px;
+	height: 33px;
 	margin-top: 4px;
 	box-sizing: border-box;
 	border: 1px solid #cccccc;
 	background: linear-gradient(to bottom, rgba(193,192,192,1) 0%,rgba(171,170,170,1) 100%);
 }
 .head_fields_calculator h2{
+	font-family: FrutigerLT-Black;
+	text-indent: 15px;
 	font-size: 17px;
 	color: white;
+	float: left;
 }
+.head_fields_calculator input{
+	width: 94px;
+	height: 24px;
+	margin-top: 1px;
+	margin-right: 7px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	border: 1px solid #adadad;
+	background: linear-gradient(to bottom, rgba(213,212,213,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 100%);
+	float: right;
+}
+.head_fields_calculator input::-webkit-input-placeholder {
+	font-family: FrutigerLT-Black;
+	line-height: 0.9;
+	font-size: 17px;
+	font-weight: 700;
+	text-align: right;
 
+	color: #e31e86;
+}
 
 
 .about_fields_calculator{
@@ -277,11 +309,13 @@ h1{
 	width: 20px;
 	height: 20px;
 	border-radius: 14px;
-	margin: 10px 5px 0 7px;
-	background: black;
+	margin: 10px 5px 0 5px;
+	box-sizing: border-box;
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(210,210,210,1) 100%);
+	box-shadow: inset 0px 4px 18px rgba(0,0,0,0.1);
 	text-align: center;
 	color: #7c7a7b;
-	line-height: 1;
+	line-height: 1.1;
 	float: left;
 }
 .about_fields_calculator p{
@@ -318,6 +352,7 @@ h1{
 .combined_calculator{
 	width: 808px;
 	height: 88px;
+	margin-top: 10px;
 	float: left;
 }
 .combined_calculator h3{
@@ -326,6 +361,7 @@ h1{
 .head_combined_calculator{
 	width: 808px;
 	height: 33px;
+	margin-top: 10px;
 	background: #502d80;
 	color: white;
 }
@@ -338,7 +374,7 @@ h1{
 	width: 192px;
 	height: 55px;
 	color: #7c7a7b;
-	background: white;
+	background: rgba(255,255,255,0.5);
 	margin-right: 9px;
 	float: left;
 }
