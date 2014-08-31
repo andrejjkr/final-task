@@ -295,7 +295,6 @@ h1{
 	font-size: 17px;
 	font-weight: 700;
 	text-align: right;
-
 	color: #e31e86;
 }
 
@@ -388,4 +387,15 @@ h1{
 	width: 200px;
 	float: right;
 	margin-right: 0px;
+}
+.combined_calculator input{
+	border: none;
+	background: rgba(255,255,255,0);
+}
+.combined_calculator input::-webkit-input-placeholder {
+	font-family: FrutigerLT-Black;
+	line-height: 0.9;
+	font-size: 17px;
+	font-weight: 700;
+	color: #e31e86;
 }
