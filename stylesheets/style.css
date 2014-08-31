@@ -242,9 +242,6 @@ h1{
 	color: #502d80;
 	float: left;
 }
-
-
-
 .about_calculator{
 	width: 377px;
 	height: 53px;
@@ -297,8 +294,6 @@ h1{
 	text-align: right;
 	color: #e31e86;
 }
-
-
 .about_fields_calculator{
 	width: 377px;
 	height: 40px;
@@ -324,9 +319,6 @@ h1{
 	letter-spacing: -0.3px;
 	color: white;
 }
-
-
-
 .left_calculator div:last-of-type,  .right_calculator div:last-of-type{
 	height: 52px;
 }
@@ -335,15 +327,10 @@ h1{
 	height: 417px;
 	float: left;
 }
-
-
-
 .right_calculator{
 	width: 377px;
 	height: 353px;
 	float: right;
-
-
 }
 
 
@@ -407,7 +394,7 @@ h1{
 	width: 896px;
 	height: 391px;
 	margin-left: 61px;
-	background: green;
+	background: white;
 }
 .arrow_sidebar{
 	width: 222px;
@@ -495,6 +482,7 @@ h1{
 	margin-left: 142px;
 	background: #5b2c81;
 	text-align: center;
+	
 }
 .footer_axis_scales:after{
 	content: "";
@@ -519,6 +507,13 @@ h1{
     border-top: none;
     border-left: none;
     border-bottom-right-radius: 6px;
+}
+.footer_axis_scales p{
+	font-family: FrutigerLT-Roman;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 1.8;
+	color: white;
 }
 
 
@@ -614,5 +609,49 @@ h1{
 	background: #1685a2;
 	transform: rotate(-24deg);
 }
-
-
+.scales h2{
+	font-family: FrutigerLT-Roman;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 2.8;
+	color: #5b2c81;
+	text-align: center;
+}
+.legend{
+	width: 208px;
+	height: 50px;
+	margin-top: 30px;
+	float:left;
+}
+.legend p{
+	font-family: FrutigerLT-Roman;
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 1.5;
+	text-indent: 5px;
+}
+.xarelto_leg{
+	width: 208px;
+	height: 21px;
+	clear: both;
+}
+#xarelto_leg{
+	width: 21px;
+	height: 21px;
+	border:none;
+	background: #ff0090;
+	float:left;
+	
+}
+.enoxaparin_leg{
+	width: 208px;
+	height: 21px;
+	margin-top: 10px;
+}
+#enoxaparin_leg{
+	width: 21px;
+	height: 21px;
+	border:none;
+	background: #1685a2;
+	float:left;
+}
