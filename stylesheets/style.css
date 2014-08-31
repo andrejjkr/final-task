@@ -19,12 +19,22 @@ html {
 	font-family: FrutigerLT-Cn;
 	src: url(FrutigerLT-Cn.woff);
 }
+@-webkit-keyframes trans-column{
+	0% {
+	transform: scale(1, 0);
+	}
+	100% {
+	transform: scale(1, 1); 
+	}
+}
+
 h1{
 	font-family: FrutigerLT-Black;
 	font-size: 28.045px;
 	text-align: center;
 	color: #432171;
 }
+
 .container{
 	margin: 0 auto;
 }
@@ -59,7 +69,6 @@ h1{
 	font-size: 12px;
 	
 }
-
 /*----------Graphics----------*/
 .graphics_content{
 	width: 100%;
@@ -152,7 +161,13 @@ h1{
 	border-top-right-radius: 7px;
 	border-top-left-radius: 7px;
 	background-color: #1785a3;
-}
+	-webkit-animation: trans-column 3s 0.5s;
+	-webkit-transform-origin: 50% 100%;
+}	
+
+
+
+
 #left_column p:last-of-type{
 	margin-top: 165px;
 }
@@ -163,7 +178,16 @@ h1{
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	background-color: #e3007c;
+	-webkit-animation: trans-column 3s 0.5s;
+	-webkit-transform-origin: 50% 100%;
+	
 }
+
+
+
+
+
+
 #right_column p:last-of-type{
 	margin-top: 108px;
 }
@@ -228,8 +252,6 @@ h1{
 	font-weight: 700;
 	color: #acabab;
 }
-
-
 .head_calculator button{
 	width: 98px;
 	height: 32px;
@@ -270,8 +292,6 @@ h1{
 .about_calculator span{
 	color: #e31e86;
 }
-
-
 
 .head_fields_calculator{
 	width: 377px;
@@ -346,8 +366,6 @@ h1{
 	float: right;
 }
 
-
-
 .combined_calculator{
 	width: 808px;
 	height: 88px;
@@ -367,8 +385,6 @@ h1{
 .head_combined_calculator h2{
 	font-size: 16px;
 }
-
-
 .combined_calculator div:nth-of-type(n+2){
 	width: 192px;
 	height: 55px;
@@ -405,8 +421,9 @@ h1{
 	margin-left: 105px;
 }
 
-/*----------COMPETITORS----------*/
 
+
+/*----------COMPETITORS----------*/
 .competitors_content{
 	width: 896px;
 	height: 391px;
@@ -465,9 +482,7 @@ h1{
 	height: 100%;
 	position: relative;
 	float: left;
-
 }
-
 .rocker{
 	width: 280px;
 	height: 10px;
@@ -588,8 +603,6 @@ h1{
 	background: #ff0090;
 	transform: rotate(-24deg);
 }
-
-
 .right_scalepan{
 	position: absolute;
 	right: 10px;
@@ -661,7 +674,6 @@ h1{
 	border:none;
 	background: #ff0090;
 	float:left;
-	
 }
 .enoxaparin_leg{
 	width: 208px;
@@ -675,7 +687,6 @@ h1{
 	background: #1685a2;
 	float:left;
 }
-
 .competitors_content_after{
 	position: absolute;
 	bottom: -101px;
