@@ -399,3 +399,56 @@ h1{
 	font-weight: 700;
 	color: #e31e86;
 }
+
+
+
+/*----------COMPETITORS----------*/
+.competitors_content{
+	width: 896px;
+	height: 391px;
+	margin-left: 61px;
+	background: green;
+}
+.arrow_sidebar{
+	width: 222px;
+	height: 100%;
+	font-family: FrutigerLT-Roman;
+	font-size: 14px;
+	font-weight: 900;
+	padding-top: 1px;
+}
+.arrow_sidebar p{
+	text-align: center;
+	margin-top: 30px;
+}
+.arrow {
+	position: relative;
+	margin: 34px 0 38px 104px;
+	width: 12px;
+	height: 204px;
+	background: linear-gradient(to bottom, rgba(255,0,144,1) 0%,rgba(23,133,163,1) 100%); 
+}
+.arrow:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: -28px;
+	right: -10px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 28px solid #ff0090;
+}
+.arrow:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: -28px;
+	right: -10px;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 28px solid #1785a3;
+}
